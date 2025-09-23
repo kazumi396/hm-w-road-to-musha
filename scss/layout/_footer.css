@@ -1,0 +1,118 @@
+/*!
+global > color
+------------------------------
+*/
+:root {
+  --color-bg-primary: #c5ab5f;
+  --color-bg-primary-light: rgb(197, 171, 95, 0.1);
+  --color-bg-black: #000000;
+  --color-bg-white: #ffffff;
+  --color-bg-gray: #d1d1d1;
+  --color-bg-gold: #aca56c;
+  --color-bg-orange: #d0a85e;
+  --color-bg-blue: #6c9dac;
+  --color-bg-pink: #ac6ca0;
+  --color-bg-green: #6cac7b;
+  --color-border-gray: #dddddd;
+  --color-border-primary: #c5ab5f;
+  --color-border-white: #ffffff;
+  --color-font-base: #000000;
+  --color-font-white: #ffffff;
+  --color-font-gray: #666666;
+}
+
+/*!
+global > content-width
+------------------------------
+*/
+:root {
+  --width-content-s: 760px;
+  --width-content: 1080px;
+}
+
+/*!
+global > font
+------------------------------
+*/
+:root {
+  --font-family-base: "Noto Sans JP", sans-serif;
+}
+
+/*!
+global > z-index
+------------------------------
+*/
+:root {
+  --z-index-default: 1;
+}
+
+/*!
+layout > footer
+------------------------------
+*/
+.footer {
+  padding: 40px 0 16px;
+  background-color: var(--color-bg-primary-light);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.footer-logo {
+  max-width: 320px;
+}
+
+.footer-site-description {
+  font-size: 12px;
+  margin-top: 16px;
+}
+.footer-site-description span {
+  display: block;
+}
+
+.footer-sns {
+  margin-top: 16px;
+}
+
+.footer-nav {
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    margin-top: 0;
+  }
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav-item {
+  font-size: 12px;
+}
+.footer-nav-item:not(:first-child)::before {
+  content: "/";
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.footer-disclaimer {
+  margin-top: 32px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer-copyright {
+  display: block;
+  margin-top: 32px;
+  border-top: 1px solid var(--color-border-gray);
+  font-size: 12px;
+  padding-top: 16px;
+  text-align: center;
+}/*# sourceMappingURL=_footer.css.map */
